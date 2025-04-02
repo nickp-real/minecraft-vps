@@ -1,0 +1,21 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    tty: true
+    stdin_open: true
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: true
+      MEMORY: 3G
+      MODPACK_PLATFORM: AUTO_CURSEFORGE
+      CF_API_KEY: ${CF_API_KEY}
+      CF_SLUG: raspberry-flavoured
+      CF_FORCE_SYNCHRONIZE: true
+      CF_EXCLUDE_MODS: |
+        slotify
+        polytone
+        rrls
+    volumes:
+      # attach the relative directory 'data' to the container's /data path
+      - ./data:/data
