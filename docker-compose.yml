@@ -7,15 +7,33 @@ services:
       - "25565:25565"
     environment:
       EULA: true
-      MEMORY: 3G
+      MEMORY: 7G
       MODPACK_PLATFORM: AUTO_CURSEFORGE
       CF_API_KEY: ${CF_API_KEY}
       CF_SLUG: raspberry-flavoured
       CF_FORCE_SYNCHRONIZE: true
       CF_EXCLUDE_MODS: |
-        slotify
+        betterfog
+        catalogue
+        cherishedworlds
+        clearvoid
+        configured
+        emi
+        entitymodelfeatures
+        entitytexturefeatures
+        helditemtool
+        legendary tooltips
+        letsleepingdogs
+        make_bubbles
+        modelfix
+        notenoughanimations
+        paronamascreens
         polytone
+        raised
         rrls
+        screenshot viewer
+        screenshot to clipboard
+        slotify
     volumes:
       # attach the relative directory 'data' to the container's /data path
       - ./data:/data
