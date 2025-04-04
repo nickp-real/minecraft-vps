@@ -13,26 +13,26 @@ services:
       CF_SLUG: raspberry-flavoured
       CF_FORCE_SYNCHRONIZE: true
       CF_EXCLUDE_MODS: |
-        betterfog
+        fog-looks-good-now
         catalogue
-        cherishedworlds
-        clearvoid
+        cherished-worlds
+        clear-void
         configured
         emi
-        entitymodelfeatures
-        entitytexturefeatures
-        helditemtool
-        legendary tooltips
-        letsleepingdogs
-        make_bubbles
-        modelfix
-        notenoughanimations
-        paronamascreens
+        entity-model-features
+        entity-texture-features-fabric
+        held-item-tooltips
+        legendary-tooltips
+        let-sleeping-dogs-lie
+        make-bubbles-pop
+        model-gap-fix
+        not-enough-animations
+        panorama-screens
         polytone
         raised
         rrls
-        screenshot viewer
-        screenshot to clipboard
+        screenshot-viewer
+        screenshot-to-clipboard
         slotify
     volumes:
       # attach the relative directory 'data' to the container's /data path
